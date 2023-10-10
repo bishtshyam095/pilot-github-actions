@@ -1,0 +1,13 @@
+name: "Install react"
+
+on: [push]
+jobs:
+  install-react:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node
+        with:
+          node-version: '18'
+      - run: npm install react
+      - run: npm install react-dom
+      - run: npm list react
