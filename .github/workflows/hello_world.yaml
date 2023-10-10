@@ -11,4 +11,8 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
-      
+
+  print-hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello GitHub actions"
